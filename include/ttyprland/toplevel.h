@@ -1,5 +1,5 @@
-#ifndef _TTYPRLAND_TOPLEVEL_H
-#define _TTYPRLAND_TOPLEVEL_H
+#ifndef TTYPRLAND_TOPLEVEL_H
+#define TTYPRLAND_TOPLEVEL_H
 
 #include <ttyprland/server.h>
 
@@ -15,4 +15,4 @@ struct ttypr_toplevel {
   struct wl_listener destroy;
 };
 
-#endif // _TTYPRLAND_TOPLEVEL_H
+#endif // TTYPRLAND_TOPLEVEL_H

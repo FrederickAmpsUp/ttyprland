@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/frederickampsup/Code/ttyprland/build/cmake_install.cmake",
+		"/home/frederickampsup/Code/ttyprland/build/impl/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

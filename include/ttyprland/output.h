@@ -1,5 +1,5 @@
-#ifndef _TTYPRLAND_OUTPUT_H
-#define _TTYPRLAND_OUTPUT_H
+#ifndef TTYPRLAND_OUTPUT_H
+#define TTYPRLAND_OUTPUT_H
 
 #include <wayland-server-core.h>
 #include <ttyprland/server.h>
@@ -14,4 +14,4 @@ struct ttypr_output {
   struct wl_listener destroy;
 };
 
-#endif // _TTYPRLAND_OUTPUT_H
+#endif // TTYPRLAND_OUTPUT_H

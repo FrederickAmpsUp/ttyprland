@@ -1,5 +1,5 @@
-#ifndef _TTYPRLAND_SERVER_H
-#define _TTYPRLAND_SERVER_H
+#ifndef TTYPRLAND_SERVER_H
+#define TTYPRLAND_SERVER_H
 
 #include <stdbool.h>
 #include <wlr/backend.h>
@@ -84,4 +84,4 @@ void ttypr_server_scene_destroy(struct ttypr_server_scene *);
 bool ttypr_server_init(struct ttypr_server *);
 void ttypr_server_destroy(struct ttypr_server *);
 
-#endif // _TTYPRLAND_SERVER_H
+#endif // TTYPRLAND_SERVER_H
