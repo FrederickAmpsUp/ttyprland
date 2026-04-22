@@ -1,0 +1,3 @@
+#!/bin/bash
+
+script -q -c "build/ttyprland" /dev/null | grep --color=never "ttyprland"
