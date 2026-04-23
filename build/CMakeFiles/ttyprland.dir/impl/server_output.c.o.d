@@ -80,7 +80,11 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o: \
  /usr/local/include/wlroots-0.21/wlr/types/wlr_data_device.h \
  /usr/local/include/wlroots-0.21/wlr/types/wlr_subcompositor.h \
  /usr/local/include/wlroots-0.21/wlr/types/wlr_output_layout.h \
+ /home/frederickampsup/Code/ttyprland/include/ttyprland/output.h \
  /usr/local/include/wlroots-0.21/wlr/util/log.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/errno.h /usr/include/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-float.h

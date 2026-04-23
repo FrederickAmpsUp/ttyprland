@@ -7,7 +7,7 @@
 struct ttypr_output {
   struct ttypr_server *server;
 
-  struct wlr_output *wlr_output;
+  struct wlr_output *output;
 
   struct wl_listener frame;
   struct wl_listener request_state;

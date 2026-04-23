@@ -3,6 +3,7 @@
 
 CMakeFiles/ttyprland.dir/impl/main.c.o: /home/frederickampsup/Code/ttyprland/impl/main.c \
   /home/frederickampsup/Code/ttyprland/include/ttyprland/server.h \
+  /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
@@ -26,11 +27,24 @@ CMakeFiles/ttyprland.dir/impl/main.c.o: /home/frederickampsup/Code/ttyprland/imp
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
+  /usr/include/bits/sigaction.h \
+  /usr/include/bits/sigcontext.h \
+  /usr/include/bits/sigevent-consts.h \
+  /usr/include/bits/siginfo-arch.h \
+  /usr/include/bits/siginfo-consts.h \
+  /usr/include/bits/signal_ext.h \
+  /usr/include/bits/signum-arch.h \
+  /usr/include/bits/signum-generic.h \
+  /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
+  /usr/include/bits/sigthread.h \
+  /usr/include/bits/ss_flags.h \
   /usr/include/bits/stat.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/struct_stat.h \
@@ -46,13 +60,20 @@ CMakeFiles/ttyprland.dir/impl/main.c.o: /home/frederickampsup/Code/ttyprland/imp
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sig_atomic_t.h \
+  /usr/include/bits/types/sigevent_t.h \
+  /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/sigval_t.h \
+  /usr/include/bits/types/stack_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
   /usr/include/bits/types/struct_tm.h \
@@ -60,6 +81,8 @@ CMakeFiles/ttyprland.dir/impl/main.c.o: /home/frederickampsup/Code/ttyprland/imp
   /usr/include/bits/types/timer_t.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/endian.h \
@@ -73,15 +96,18 @@ CMakeFiles/ttyprland.dir/impl/main.c.o: /home/frederickampsup/Code/ttyprland/imp
   /usr/include/math.h \
   /usr/include/pixman-1/pixman-version.h \
   /usr/include/pixman-1/pixman.h \
+  /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
+  /usr/include/stdlib.h \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/stat.h \
   /usr/include/sys/types.h \
+  /usr/include/sys/ucontext.h \
   /usr/include/time.h \
   /usr/include/wayland-protocols/xdg-shell-enum.h \
   /usr/include/wayland-server-core.h \
@@ -490,7 +516,9 @@ CMakeFiles/ttyprland.dir/impl/server_input.c.o: /home/frederickampsup/Code/ttypr
   /usr/local/include/wlroots-0.21/wlr/util/log.h
 
 CMakeFiles/ttyprland.dir/impl/server_output.c.o: /home/frederickampsup/Code/ttyprland/impl/server_output.c \
+  /home/frederickampsup/Code/ttyprland/include/ttyprland/output.h \
   /home/frederickampsup/Code/ttyprland/include/ttyprland/server.h \
+  /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
@@ -519,6 +547,7 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o: /home/frederickampsup/Code/ttyp
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/struct_stat.h \
@@ -548,6 +577,8 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o: /home/frederickampsup/Code/ttyp
   /usr/include/bits/types/timer_t.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/endian.h \
@@ -564,6 +595,7 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o: /home/frederickampsup/Code/ttyp
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
+  /usr/include/stdlib.h \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
@@ -950,8 +982,6 @@ ttyprland: /usr/lib/Scrt1.o \
 
 CMakeFiles/ttyprland.dir/impl/server_scene.c.o:
 
-CMakeFiles/ttyprland.dir/impl/server_protocols.c.o:
-
 CMakeFiles/ttyprland.dir/impl/server_graphics.c.o:
 
 /usr/lib32/libxcb.so.1:
@@ -989,8 +1019,6 @@ CMakeFiles/ttyprland.dir/impl/server_graphics.c.o:
 /usr/lib/libwacom.so.9:
 
 /usr/lib/libvulkan.so.1:
-
-/usr/lib/libudev.so.1:
 
 /usr/lib32/libXdmcp.so.6:
 
@@ -1060,113 +1088,33 @@ CMakeFiles/ttyprland.dir/impl/server.c.o:
 
 /usr/lib/libc.so:
 
-/usr/lib/crtn.o:
+/home/frederickampsup/Code/ttyprland/impl/server_scene.c:
 
-/usr/include/bits/types/struct_tm.h:
+CMakeFiles/ttyprland.dir/impl/server_input.c.o:
 
-/usr/include/bits/wchar.h:
+/usr/local/lib/libwlroots-0.21.so:
 
-/usr/lib/libdrm.so.2:
+/usr/lib/libxcb-xinput.so.0:
 
-/usr/include/bits/types/struct_timeval.h:
+/home/frederickampsup/Code/ttyprland/impl/server_protocols.c:
 
-/usr/include/bits/types/struct_timespec.h:
+/home/frederickampsup/Code/ttyprland/impl/server_output.c:
 
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/sys/stat.h:
-
-/usr/lib32/libwayland-client.so.0:
-
-/usr/lib/libinput.so.10:
-
-/home/frederickampsup/Code/ttyprland/impl/server_graphics.c:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/lib/crti.o:
-
-/usr/include/bits/typesizes.h:
+/home/frederickampsup/Code/ttyprland/impl/server.c:
 
 /usr/local/include/wlroots-0.21/wlr/util/box.h:
 
-/usr/include/bits/types/cookie_io_functions_t.h:
+/usr/lib32/libxcb-xinput.so.0:
 
-CMakeFiles/ttyprland.dir/impl/server_output.c.o:
+/usr/lib32/libxcb-dri3.so.0:
 
-/usr/include/bits/stdint-uintn.h:
+/usr/local/include/wlroots-0.21/wlr/types/wlr_output_layout.h:
 
-/usr/include/endian.h:
+/usr/local/include/wlroots-0.21/wlr/types/wlr_linux_dmabuf_v1.h:
 
-/usr/include/wayland-version.h:
+/usr/local/include/wlroots-0.21/wlr/types/wlr_input_device.h:
 
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/errno.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/bits/flt-eval-method.h:
-
-/usr/local/include/wlroots-0.21/wlr/render/dmabuf.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/lib/libxkbcommon.so:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/string.h:
-
-/home/frederickampsup/Code/ttyprland/impl/server_scene.c:
-
-/usr/lib32/libxcb-present.so.0:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/bits/time.h:
-
-/usr/lib/ld-linux-x86-64.so.2:
-
-/usr/include/bits/stat.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/home/frederickampsup/Code/ttyprland/include/ttyprland/server.h:
-
-/usr/include/xkbcommon/xkbcommon-compat.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/usr/local/include/wlroots-0.21/wlr/render/wlr_texture.h:
-
-/usr/include/sys/types.h:
-
-/usr/include/pixman-1/pixman-version.h:
-
-/usr/include/bits/types/__sigset_t.h:
+/usr/local/include/wlroots-0.21/wlr/types/wlr_buffer.h:
 
 /usr/lib32/libxcb-shm.so.0:
 
@@ -1176,13 +1124,127 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o:
 
 /usr/local/include/wlroots-0.21/wlr/render/pass.h:
 
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/types.h:
+
+/usr/local/include/wlroots-0.21/wlr/types/wlr_data_device.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/bits/types/__sigval_t.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/home/frederickampsup/Code/ttyprland/impl/server_input.c:
+
+/usr/include/bits/struct_stat.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/lib/crtn.o:
+
+/usr/include/bits/sigstksz.h:
+
+CMakeFiles/ttyprland.dir/impl/server_output.c.o:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/endian.h:
+
+/usr/include/wayland-version.h:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/usr/include/bits/stat.h:
+
+CMakeFiles/ttyprland.dir/impl/server_protocols.c.o:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/types/struct_sigstack.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h:
+
+/usr/lib32/libxcb-present.so.0:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/lib/libdrm.so.2:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/local/include/wlroots-0.21/wlr/render/dmabuf.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/bits/types/sigval_t.h:
+
+/home/frederickampsup/Code/ttyprland/include/ttyprland/server.h:
+
+/usr/include/xkbcommon/xkbcommon-compat.h:
+
+/usr/lib32/libffi.so.8:
+
+/usr/lib/liblcms2.so.2:
+
+/usr/include/bits/stdint-least.h:
+
 /usr/include/bits/errno.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/lib/libffi.so.8:
+
+/usr/local/include/wlroots-0.21/wlr/types/wlr_xdg_shell.h:
+
+/usr/include/math.h:
 
 /usr/lib32/libXau.so.6:
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/bits/signum-arch.h:
+
 /usr/include/bits/math-vector.h:
+
+/usr/local/include/wlroots-0.21/wlr/types/wlr_damage_ring.h:
+
+/usr/include/bits/fp-fast.h:
 
 /usr/lib/libm.so:
 
@@ -1200,21 +1262,25 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o:
 
 /usr/include/stdint.h:
 
-/usr/local/include/wlroots-0.21/wlr/types/wlr_buffer.h:
-
 /usr/include/bits/types/__fpos64_t.h:
 
-/usr/include/bits/libc-header-start.h:
+/usr/local/include/wlroots-0.21/wlr/util/addon.h:
 
-/usr/lib32/libudev.so.1:
+/usr/include/bits/select.h:
 
-/usr/include/bits/mathcalls.h:
+/usr/local/include/wlroots-0.21/wlr/types/wlr_keyboard.h:
 
-/usr/include/bits/types/__fpos_t.h:
+/usr/local/include/wlroots-0.21/wlr/render/wlr_renderer.h:
 
-/usr/local/include/wlroots-0.21/wlr/types/wlr_subcompositor.h:
+/usr/include/bits/types/__locale_t.h:
 
-/usr/include/bits/types/clock_t.h:
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/pixman-1/pixman-version.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/bits/flt-eval-method.h:
 
 /usr/include/bits/mathcalls-macros.h:
 
@@ -1222,13 +1288,9 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o:
 
 /usr/include/bits/fp-logb.h:
 
-/usr/lib/Scrt1.o:
+/usr/include/gnu/stubs.h:
 
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/wayland-protocols/xdg-shell-enum.h:
+/usr/include/bits/pthreadtypes-arch.h:
 
 /usr/lib/libxcb-xfixes.so.0:
 
@@ -1238,15 +1300,113 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o:
 
 /usr/include/stdc-predef.h:
 
-/home/frederickampsup/Code/ttyprland/impl/server_output.c:
+/usr/include/bits/sigcontext.h:
 
-/usr/include/bits/stdint-intn.h:
+/home/frederickampsup/Code/ttyprland/include/ttyprland/output.h:
 
-/usr/lib32/libffi.so.8:
+/usr/include/bits/struct_mutex.h:
 
-/usr/lib/liblcms2.so.2:
+/usr/lib/libudev.so.1:
 
-/usr/include/bits/stdint-least.h:
+/usr/include/bits/signum-generic.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/libxkbcommon.so:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/types/stack_t.h:
+
+/usr/include/bits/sigevent-consts.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/lib32/libudev.so.1:
+
+/usr/local/include/wlroots-0.21/wlr/types/wlr_subcompositor.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/lib32/libexpat.so.1:
+
+/usr/include/pixman-1/pixman.h:
+
+/usr/local/include/wlroots-0.21/wlr/render/drm_format_set.h:
+
+/usr/include/bits/types/sigevent_t.h:
+
+/usr/lib32/libwayland-client.so.0:
+
+/usr/lib/libinput.so.10:
+
+/home/frederickampsup/Code/ttyprland/impl/server_graphics.c:
+
+/usr/include/bits/types/siginfo_t.h:
+
+/usr/include/xkbcommon/xkbcommon-keysyms.h:
+
+/usr/include/bits/ss_flags.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/local/include/wlroots-0.21/wlr/render/wlr_texture.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/Scrt1.o:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/local/include/wlroots-0.21/wlr/types/wlr_scene.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/wayland-protocols/xdg-shell-enum.h:
+
+/usr/lib/crti.o:
+
+/usr/include/bits/types/sig_atomic_t.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/lib/libXau.so.6:
+
+/usr/local/include/wlroots-0.21/wlr/types/wlr_compositor.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/signal_ext.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/local/include/wlroots-0.21/wlr/types/wlr_seat.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
 
 /usr/include/bits/wordsize.h:
 
@@ -1256,37 +1416,29 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o:
 
 /usr/include/features.h:
 
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/gnu/stubs.h:
-
 /usr/include/inttypes.h:
 
 /usr/lib/libmtdev.so.1:
 
 /usr/include/linux/errno.h:
 
-/usr/lib32/libexpat.so.1:
+/usr/lib/libxcb-ewmh.so.2:
 
-/usr/include/pixman-1/pixman.h:
+/usr/local/include/wlroots-0.21/wlr/types/wlr_pointer.h:
 
-/usr/local/include/wlroots-0.21/wlr/render/drm_format_set.h:
+/usr/include/signal.h:
+
+/usr/include/stdlib.h:
 
 /usr/include/strings.h:
 
 /usr/include/sys/cdefs.h:
 
-/usr/local/include/wlroots-0.21/wlr/types/wlr_output.h:
-
 /usr/local/include/wlroots-0.21/wlr/util/log.h:
 
+/usr/local/include/wlroots-0.21/wlr/types/wlr_output.h:
+
 /usr/local/include/wlroots-0.21/wlr/render/allocator.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_seat.h:
 
 /usr/lib32/libvulkan.so.1:
 
@@ -1296,21 +1448,19 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
 
+/usr/include/bits/siginfo-arch.h:
+
 /usr/include/wayland-server-protocol.h:
 
 /usr/include/sys/select.h:
 
 /usr/include/wayland-server.h:
 
-/usr/include/xkbcommon/xkbcommon-keysyms.h:
-
 /usr/include/bits/long-double.h:
 
 /usr/include/xkbcommon/xkbcommon.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h:
+/usr/include/bits/siginfo-consts.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
 
@@ -1319,67 +1469,3 @@ CMakeFiles/ttyprland.dir/impl/server_output.c.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h:
 
 /usr/local/include/wlroots-0.21/wlr/backend.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_keyboard.h:
-
-/usr/local/include/wlroots-0.21/wlr/render/wlr_renderer.h:
-
-/usr/lib/libXau.so.6:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_compositor.h:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_damage_ring.h:
-
-/usr/include/bits/endian.h:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_data_device.h:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_input_device.h:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_linux_dmabuf_v1.h:
-
-/usr/lib32/libxcb-xinput.so.0:
-
-/usr/lib32/libxcb-dri3.so.0:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_output_layout.h:
-
-/usr/lib/libxcb-ewmh.so.2:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_pointer.h:
-
-/usr/include/stdio.h:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_scene.h:
-
-/usr/lib/libffi.so.8:
-
-/usr/include/math.h:
-
-/usr/local/include/wlroots-0.21/wlr/types/wlr_xdg_shell.h:
-
-/usr/include/bits/select.h:
-
-/usr/local/include/wlroots-0.21/wlr/util/addon.h:
-
-/home/frederickampsup/Code/ttyprland/impl/server.c:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/bits/struct_stat.h:
-
-/home/frederickampsup/Code/ttyprland/impl/server_input.c:
-
-CMakeFiles/ttyprland.dir/impl/server_input.c.o:
-
-/usr/local/lib/libwlroots-0.21.so:
-
-/usr/lib/libxcb-xinput.so.0:
-
-/home/frederickampsup/Code/ttyprland/impl/server_protocols.c:

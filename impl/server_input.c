@@ -12,6 +12,10 @@ bool ttypr_server_input_init(struct ttypr_server_input *server_input) {
     goto error_seat;
   }
 
+  wlr_seat_set_capabilities(server_input->seat, WL_SEAT_CAPABILITY_POINTER | WL_SEAT_CAPABILITY_KEYBOARD);
+
+  wlr_log(WLR_DEBUG, "set seat capabilities to pointer and keyboard");
+
   wlr_log(WLR_DEBUG, "wlr_seat_create() succeeded");
 
   wlr_log(WLR_INFO, "ttypr_server_input_init() finished");
