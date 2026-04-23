@@ -2,13 +2,40 @@
 #include <ttyprland/output.h>
 #include <wlr/util/log.h>
 #include <stdlib.h>
+#include <time.h>
 
 static void on_frame(struct wl_listener *listener, void *data) {
-  // TODO
+  struct ttypr_output *output = wl_container_of(listener, output, frame);
+
+  if (!output->server->scene.scene) {
+    wlr_log(WLR_ERROR, "no scene to draw");
+    return;
+  }
+
+  if (!output->output) {
+    wlr_log(WLR_ERROR, "no valid output");
+    return;
+  }
+
+  struct wlr_scene_output *scene_output = wlr_scene_get_scene_output(
+    output->server->scene.scene, output->output);
+
+  if (!scene_output) {
+    wlr_log(WLR_ERROR, "wlr_scene_get_scene_output() failed");
+    return;
+  }
+  
+  wlr_scene_output_commit(scene_output, NULL);
+
+  struct timespec now;
+  clock_gettime(CLOCK_MONOTONIC, &now);
+  wlr_scene_output_send_frame_done(scene_output, &now);
 }
 
 static void on_request_state(struct wl_listener *listener, void *data) {
-  // TODO
+  struct ttypr_output *output = wl_container_of(listener, output, request_state);
+  const struct wlr_output_event_request_state *event = data;
+  wlr_output_commit_state(output->output, event->state);
 }
 
 static void on_destroy(struct wl_listener *listener, void *data) {
