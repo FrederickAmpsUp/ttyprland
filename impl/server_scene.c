@@ -27,6 +27,7 @@ bool ttypr_server_scene_init(struct ttypr_server_scene *server_scene) {
 
 error_scene_output_layout:
   wlr_scene_node_destroy(&server_scene->scene->tree.node);
+  server_scene->scene = NULL;
 error_scene:
   return false;
 }

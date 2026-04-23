@@ -12,6 +12,12 @@ bool ttypr_server_input_init(struct ttypr_server_input *server_input) {
     goto error_seat;
   }
 
+  server_input->cursor = wlr_cursor_create();
+  if (!server_input->cursor) {
+    wlr_log(WLR_ERROR, "wlr_cursor_create() failed");
+    goto error_cursor;
+  }
+
   wlr_seat_set_capabilities(server_input->seat, WL_SEAT_CAPABILITY_POINTER | WL_SEAT_CAPABILITY_KEYBOARD);
 
   wlr_log(WLR_DEBUG, "set seat capabilities to pointer and keyboard");
@@ -22,6 +28,9 @@ bool ttypr_server_input_init(struct ttypr_server_input *server_input) {
 
   return true;
 
+error_cursor:
+  wlr_seat_destroy(server_input->seat);
+  server_input->seat = NULL;
 error_seat:
   return false;
 }

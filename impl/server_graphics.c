@@ -46,8 +46,10 @@ bool ttypr_server_graphics_init(struct ttypr_server_graphics *server_graphics) {
 error_allocator:
 error_renderer_display:
   wlr_renderer_destroy(server_graphics->renderer);
+  server_graphics->renderer = NULL;
 error_renderer:
   wlr_backend_destroy(server_graphics->backend);
+  server_graphics->backend = NULL;
 error_backend:
   return false;
 }
