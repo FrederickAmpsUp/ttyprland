@@ -23,6 +23,13 @@ bool ttypr_server_graphics_init(struct ttypr_server_graphics *server_graphics) {
 
   wlr_log(WLR_DEBUG, "wlr_renderer_autocreate() succeeded");
 
+  if (!wlr_renderer_init_wl_display(server_graphics->renderer, server_graphics->server->display)) {
+    wlr_log(WLR_ERROR, "wlr_renderer_init_wl_display() failed");
+    goto error_renderer_display;
+  }
+
+  wlr_log(WLR_DEBUG, "wlr_renderer_init_wl_display() succeded");
+
   server_graphics->allocator = wlr_allocator_autocreate(
     server_graphics->backend, server_graphics->renderer);
   if (!server_graphics->allocator) {
@@ -37,6 +44,7 @@ bool ttypr_server_graphics_init(struct ttypr_server_graphics *server_graphics) {
   return true;
 
 error_allocator:
+error_renderer_display:
   wlr_renderer_destroy(server_graphics->renderer);
 error_renderer:
   wlr_backend_destroy(server_graphics->backend);
