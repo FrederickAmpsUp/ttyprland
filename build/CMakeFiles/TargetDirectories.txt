@@ -1,5 +1,0 @@
-/home/frederickampsup/Code/ttyprland/build/CMakeFiles/ttyprland.dir
-/home/frederickampsup/Code/ttyprland/build/CMakeFiles/edit_cache.dir
-/home/frederickampsup/Code/ttyprland/build/CMakeFiles/rebuild_cache.dir
-/home/frederickampsup/Code/ttyprland/build/impl/CMakeFiles/edit_cache.dir
-/home/frederickampsup/Code/ttyprland/build/impl/CMakeFiles/rebuild_cache.dir
